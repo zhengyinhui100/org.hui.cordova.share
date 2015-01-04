@@ -6,7 +6,7 @@
  * Copyright (c) 2013年 mob.com. All rights reserved.
  */
 
-package com.lejia.sportapp.d.wxapi;
+package com.hui.sportapp.test.wxapi;
 
 import android.content.Intent;
 import android.widget.Toast;
