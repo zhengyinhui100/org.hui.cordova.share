@@ -143,8 +143,8 @@
         Enable="false" />
 
     <Renren
-        Id="10"
-        SortId="10"
+        Id="15"
+        SortId="15"
         AppId="226427"
         ApiKey="fc5b8aed373c4c27a05b712acba0f8c3"
         SecretKey="f29df781abdd4f49beca5a2194676ca4"
@@ -174,6 +174,32 @@
         ApiKey="02e2cbe5ca06de5908a863b15e149b0b"
         Secret="9f1e7b4f71304f2f"
         RedirectUri="http://www.sharesdk.cn"
+        Enable="true" />
+    
+     <!-- 
+    	Yixin易信和YixinMoments易信朋友圈的appid是一样的；
+    
+                       注意：开发者不能用我们这两个平台的appid,否则分享不了
+    
+       	 易信测试的时候需要先签名打包出apk,
+		sample测试易信，要先签名打包，keystore在sample项目中，密码123456
+		
+		BypassApproval是绕过审核的标记，设置为true后AppId将被忽略，故不经过
+		审核的应用也可以执行分享，但是仅限于分享文字或图片，不能分享其他类型，
+		默认值为false。
+	-->
+	<Yixin 
+    	Id="29"
+        SortId="9"
+        AppId="yxce6d8be292f14296bc9116848a12008b"
+        BypassApproval="false"
+        Enable="true" />
+	
+	<YixinMoments
+    	Id="30"
+        SortId="10"
+        AppId="yxce6d8be292f14296bc9116848a12008b"
+        BypassApproval="false"
         Enable="true" />
     
     <YouDao
@@ -276,32 +302,6 @@
 		RedirectUri="http://www.17lejia.com"
         Enable="false" />
     
-    <!-- 
-    	Yixin易信和YixinMoments易信朋友圈的appid是一样的；
-    
-                       注意：开发者不能用我们这两个平台的appid,否则分享不了
-    
-       	 易信测试的时候需要先签名打包出apk,
-		sample测试易信，要先签名打包，keystore在sample项目中，密码123456
-		
-		BypassApproval是绕过审核的标记，设置为true后AppId将被忽略，故不经过
-		审核的应用也可以执行分享，但是仅限于分享文字或图片，不能分享其他类型，
-		默认值为false。
-	-->
-	<Yixin 
-    	Id="29"
-        SortId="29"
-        AppId="yx0d9a9f9088ea44d78680f3274da1765f"
-        BypassApproval="true"
-        Enable="true" />
-	
-	<YixinMoments
-    	Id="30"
-        SortId="30"
-        AppId="yx0d9a9f9088ea44d78680f3274da1765f"
-        BypassApproval="true"
-        Enable="true" />
-
 	<Mingdao
     	Id="31"
         SortId="31"

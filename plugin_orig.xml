@@ -69,7 +69,8 @@
 		</config-file>
 
 		<!-- PS:微信分享回调，此处包名必须是项目包名+.wxapi，否则调用后应用会停止运行！！(微信回调时按照硬编码需找class的，不按规则会是java.lang.ClassNotFoundException) -->
-		<source-file src="src/android/WXEntryActivity.java" target-dir="src/{%=wxapiSrc%}/wxapi" />
+		<source-file src="src/android/WXEntryActivity.java" target-dir="src/{%=srcDir%}/wxapi" />
+		<source-file src="src/android/YXEntryActivity.java" target-dir="src/{%=srcDir%}/yxapi" />
 		
 		<source-file src="src/android/Share.java" target-dir="src/org/hui/cordova/share" />
 		<source-file src="src/libs/mframework.jar" target-dir="libs" framework="true" />
